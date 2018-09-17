@@ -27,6 +27,7 @@
             "url": "https://github.com/burzum/authentication"
         }
     ],
+    "minimum-stability": "dev",
     "config": {
         "sort-packages": true
     }
