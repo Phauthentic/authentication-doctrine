@@ -1,0 +1,33 @@
+{
+    "name": "phauthentic/authentication-doctrine",
+    "require": {
+        "php": ">=7.1",
+        "cakephp/authentication": "^2.0@dev",
+        "doctrine/orm": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/dbunit": "^4.0",
+        "phpunit/phpunit": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phauthentic\\Authentication\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Authentication\\Test\\": "vendor/cakephp/authentication/tests/",
+            "Phauthentic\\Authentication\\Test\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/burzum/authentication"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
