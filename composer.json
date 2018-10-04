@@ -2,7 +2,7 @@
     "name": "phauthentic/authentication-doctrine",
     "require": {
         "php": ">=7.1",
-        "cakephp/authentication": "^2.0@dev",
+        "phauthentic/authentication": "dev-master",
         "doctrine/orm": "^2.6"
     },
     "require-dev": {
@@ -17,16 +17,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Authentication\\Test\\": "vendor/cakephp/authentication/tests/",
-            "Phauthentic\\Authentication\\Test\\": "tests/"
+            "Phauthentic\\Authentication\\Test\\": [
+                "tests/",
+                "vendor/phauthentic/authentication/tests/"
+            ]
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/burzum/authentication"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {

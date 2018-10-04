@@ -2,8 +2,8 @@
 namespace Phauthentic\Authentication\Identifier\Resolver;
 
 use ArrayAccess;
-use Authentication\Identifier\Resolver\ResolverInterface;
 use Doctrine\Common\Persistence\ObjectRepository;
+use Phauthentic\Authentication\Identifier\Resolver\ResolverInterface;
 use UnexpectedValueException;
 
 class DoctrineResolver implements ResolverInterface
@@ -33,7 +33,7 @@ class DoctrineResolver implements ResolverInterface
     /**
      * {@inheritDoc}
      */
-    public function find(array $conditions)
+    public function find(array $conditions): ?ArrayAccess
     {
         $entity = $this->repository->findOneBy($conditions + $this->conditions);
 

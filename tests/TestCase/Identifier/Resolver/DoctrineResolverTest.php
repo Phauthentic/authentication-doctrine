@@ -14,7 +14,6 @@
  */
 namespace Phauthentic\Authentication\Test\TestCase\Identifier\Resolver;
 
-use Authentication\Test\TestCase\AuthenticationTestCase;
 use Doctrine\DBAL\Configuration;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\ORM\EntityManager;
@@ -22,6 +21,7 @@ use Doctrine\ORM\Tools\Setup;
 use Phauthentic\Authentication\Identifier\Resolver\DoctrineResolver;
 use Phauthentic\Authentication\Test\TestApp\Invalid;
 use Phauthentic\Authentication\Test\TestApp\User;
+use Phauthentic\Authentication\Test\TestCase\AuthenticationTestCase;
 use UnexpectedValueException;
 use const ROOT;
 
