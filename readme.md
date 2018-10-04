@@ -5,3 +5,17 @@
 [![Code Quality](https://img.shields.io/scrutinizer/g/Phauthentic/authentication-doctrine/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/Phauthentic/authentication-doctrine/)
 
 This package will allow you to lookup user credentials with your Doctrine ORM using the [Phautentic Authentication](https://github.com/Phauthentic/authentication) library.
+
+## How to use it
+
+Install it via composer.
+
+```sh
+composer require phauthentic/authentication-doctrine
+```
+
+## Copyright & License
+
+Licensed under the [MIT license](LICENSE.txt).
+
+Copyright (c) [Phauthentic](https://github.com/Phauthentic)
